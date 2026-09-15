@@ -9,11 +9,26 @@
         "components": [
           {
             "/": "/strcle/launch",
-            "comment": "精确匹配。App Store 活动深链用这个，须与 App 内 AppRouter.EventLink.path 一致。"
+            "comment": "精确匹配。笔画输入法 App Store 活动深链用这个，须与 App 内 AppRouter.EventLink.path 一致。"
           },
           {
             "/": "/strcle/launch*",
             "comment": "通配兜底：同时兼容带尾斜杠的 /strcle/launch/ 等变体（components 各条之间是 OR）。"
+          }
+        ]
+      },
+      {
+        "appIDs": [
+          "UWPC275FT8.com.lixing.gugupinyin"
+        ],
+        "components": [
+          {
+            "/": "/gaga/launch",
+            "comment": "精确匹配。咕咕拼音 App Store 活动深链，须与 App 内 AppRouter.EventLink.path 一致。"
+          },
+          {
+            "/": "/gaga/launch*",
+            "comment": "通配兜底：兼容带尾斜杠的 /gaga/launch/ 等变体。"
           }
         ]
       }
